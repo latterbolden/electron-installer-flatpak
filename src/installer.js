@@ -66,7 +66,7 @@ class FlatpakInstaller extends common.ElectronInstaller {
       sdk: 'org.freedesktop.Sdk'
     }
     if (await this.requiresSandboxWrapper()) {
-      baseConfig.runtimeVersion = '19.08'
+      baseConfig.runtimeVersion = '21.08'
     } else {
       baseConfig.runtimeVersion = '1.6'
     }
@@ -93,7 +93,7 @@ class FlatpakInstaller extends common.ElectronInstaller {
           {
             type: 'git',
             url: 'https://github.com/refi64/zypak',
-            tag: 'v2021.02'
+            tag: 'v2022.04'
           }
         ]
       })
